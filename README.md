@@ -25,21 +25,21 @@ To get started with UniBoard on your local machine, follow these steps:
 
  ## Screen shots
 
-### Launch screen
+*Launch screen*
 ![Screenshot_20240619_111245_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/778c5022-17a3-4870-862d-1ee40ef21b4e)
 
-### Welcome Screens
+*Welcome Screens*
 ![Screenshot_20240619_111250_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/e82a6d73-a5e9-4336-b55d-4e4cd575f4b2)
 ![Screenshot_20240619_111254_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/9c4f5804-2af9-4d56-8832-ab0f214ba268)
 ![Screenshot_20240619_111258_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/94e420c4-c744-4a10-8fc5-35aa3383b447)
 
-### Sign up screen
+*Sign up screen*
 ![Screenshot_20240619_111302_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/350f0895-bfe8-44d9-9f55-9370159653de)
 
-### Dashboard
+*Dashboard*
 ![Screenshot_20240619_111315_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/27172796-517c-48a1-988e-d402d34e498c)
 
-### Boardings
+*Boardings*
 ![Screenshot_20240619_111325_com example uniboard](https://github.com/bhashanasirimanna/Uniboard-android-app/assets/146844863/386fb140-91dc-44c8-baeb-b4ac07c81f03)
 
 
