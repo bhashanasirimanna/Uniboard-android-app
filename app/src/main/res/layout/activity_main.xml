@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lounchPBcircle"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="-250dp"
+        android:layout_marginEnd="-250dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/circle_pink_blue_black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/lounchPPcircle"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="-300dp"
+        android:background="@drawable/circle_pink_purple_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lounchBBcircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/lounchBcircle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/cricle_purple_black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/lounchPBcircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lounchBBcircle"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="179dp"
+        android:background="@drawable/circle_blue_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lounchPPcircle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

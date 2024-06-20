@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".homepage">
+
+    <TextView
+        android:id="@+id/homecircle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="-150dp"
+        android:background="@drawable/circle_pink_purple_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homecirclae2"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginEnd="-200dp"
+        android:layout_marginBottom="-200dp"
+        android:background="@drawable/circle_pink_purple_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/homebtnimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/home" />
+
+            <TextView
+                android:id="@+id/homebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homebtn"
+                android:textAlignment="center"
+                android:textColor="@color/purplepink"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/searchbtnimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/search_white" />
+
+            <TextView
+                android:id="@+id/searchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/searchbtn"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navfavouritelayout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/favouritebtnimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/heart_white" />
+
+            <TextView
+                android:id="@+id/favouritebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/favouritebtn"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navaccountlayout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/accountbtnimage"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/user_white" />
+
+            <TextView
+                android:id="@+id/accountbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountbtn"
+                android:textAlignment="center"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hometitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/app_name"
+        android:textColor="@color/purplepink"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/homedescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homedescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/homedescription"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/searchbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homecircle" />
+
+    <LinearLayout
+        android:id="@+id/searchbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/boarderbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:radius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/servicestitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homedescription">
+
+        <EditText
+            android:id="@+id/searchbox"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/searchbarhint"
+            android:inputType="text"
+            android:textColorHint="@color/purplepink" />
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/search" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roomlayout"
+        android:layout_width="0dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cardborder"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/anexxeslayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servicestitle">
+
+        <ImageView
+            android:id="@+id/roomimage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/rooms" />
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/room"
+            android:textAlignment="center"
+            android:textColor="@color/purplepink"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anexxeslayout"
+        android:layout_width="0dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cardborder"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/roomlayout"
+        app:layout_constraintTop_toBottomOf="@+id/servicestitle">
+
+        <ImageView
+            android:id="@+id/anexximage"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/anexxes" />
+
+        <TextView
+            android:id="@+id/anexx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/anexx"
+            android:textAlignment="center"
+            android:textColor="@color/purplepink"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/servicestitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/servisectitle"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
